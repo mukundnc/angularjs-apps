@@ -1,0 +1,15 @@
+/* app css stylesheet */
+
+html, body {
+    overflow: hidden;
+}
+html {
+
+    margin: 0;
+    width :100%
+}
+body {
+    margin: 0;
+    width :100%
+    padding: 0px !important;
+}
