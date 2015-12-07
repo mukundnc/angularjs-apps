@@ -1,0 +1,33 @@
+
+<b>Requisitions</b>
+<uib-tabset justified="true">
+    <uib-tab ng-repeat="con in content track by $index" heading="{{con.name}}" ng-click="selectTab($index)">        
+        <div ng-repeat="(key, val) in con track by $index">
+            <div ng-if="key == 'shiptolocation'">
+                <p>
+                <b>Ship To Address</b>                
+                <div>Street: {{val.home.street}}</div>
+                <div>City: {{val.home.city}}</div>
+                <div>Zip: {{val.home.zip_code}}</div>
+                </p>
+            </div>
+            <div ng-if="key == 'customproperties'">
+                <p>
+                <b>CustomProperties</b> <button type="button" class="btn btn-default" ng-click="addCustomProperty()">Add</button>
+                <div ng-repeat="(ckey, cval) in val">
+                    <i>{{ckey}}</i>
+                    <div ng-repeat="(cckey, ccval) in cval">
+                        <div>{{cckey}}: {{ccval.toString()}}</div>
+                    </div>
+                    <br/>
+                </div>
+                </p>
+            </div>
+            <div ng-if="!(key == 'customproperties' || key == 'shiptolocation')">
+                <p>
+                <div>{{key}}: {{val}}</div>
+                </p>
+            </div>
+        </div>
+    </uib-tab>
+</uib-tabset>

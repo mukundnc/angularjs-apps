@@ -1,0 +1,17 @@
+/* app css stylesheet */
+
+html, body {
+}
+html {
+
+    margin: 0;
+    width :100%
+}
+body {
+    margin: 0;
+    width :100%
+    padding: 0px !important;
+}
+table, th, td {
+   border: 1px solid black;
+}

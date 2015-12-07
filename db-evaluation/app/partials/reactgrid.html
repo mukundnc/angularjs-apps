@@ -1,0 +1,7 @@
+<div>
+    <span>{{vm.name}}</span>
+</div>
+<hr>
+<input type="text" id="message_id" name="message_id" class="form-control" ng-model='vm.customprop'/>
+<button ng-click='vm.apply()' class="btn btn-primary" type="button" >Apply</button>
+<reacttable table="vm.table" watch-depth="value"></reacttable>

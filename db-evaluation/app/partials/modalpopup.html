@@ -1,0 +1,33 @@
+<div class="modal-header">
+    <h3 class="modal-title">Add Custom Property</h3>
+</div>
+<div class="modal-body">
+    <div class="form-group">
+        <label class="col-sm-3 control-label text-left-imp" for='message_id'> Name <br></label>
+        <div class="col-sm-6">
+            <input type="text" id="message_id" name="message_id" class="form-control" ng-model="item.name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label text-left-imp" for='message_id'> Id <br></label>
+        <div class="col-sm-6">
+            <input type="text" id="message_id" name="message_id" class="form-control" ng-model="item.id">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label text-left-imp" for='message_id'> Display Name <br></label>
+        <div class="col-sm-6">
+            <input type="text" id="message_id" name="message_id" class="form-control" ng-model="item.displayname">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label text-left-imp" for='message_id'> Value <br></label>
+        <div class="col-sm-6">
+            <input type="text" id="message_id" name="message_id" class="form-control" ng-model="item.value">
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="ok()">Save</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+</div>
